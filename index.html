@@ -23,25 +23,29 @@
             justify-content: center;
             padding: 20px;
         }
+        .gallery-item {
+            text-align: center;
+            margin: 10px;
+        }
         .gallery img {
             width: 100%;
             max-width: 300px;
             height: auto;
-            margin: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
-       
         .gallery img:hover {
             transform: scale(1.1);
-             
             border: 3px solid gold; 
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1a1a1a;
+        }
+        .caption {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -53,11 +57,28 @@
 </header>
 
 <div class="gallery">
-    <img src="./photocoffee/coffee1.jpg" alt="Coffee Image 1">
-    <img src="./photocoffee/coffee2.jpg" alt="Coffee Image 2">
-    <img src="./photocoffee/coffee3.jpg" alt="Coffee Image 3">
-    <img src="./photocoffee/coffee5.jpg" alt="Coffee Image 4">
+    <div class="gallery-item">
+        <img src="./photocoffee/coffee1.jpg" alt="Coffee Image 1">
+        <div class="caption">"Wake up and smell the perfection in every sip!"</div>
+    </div>
+    <div class="gallery-item">
+        <img src="./photocoffee/coffee2.jpg" alt="Coffee Image 2">
+        <div class="caption">"Rich, bold, and ready to energize your day!"</div>
+    </div>
+    <div class="gallery-item">
+        <img src="./photocoffee/coffee3.jpg" alt="Coffee Image 3">
+        <div class="caption">"Pour happiness, taste the smoothness of every bean."</div>
+    </div>
+    <div class="gallery-item">
+        <img src="./photocoffee/coffee5.jpg" alt="Coffee Image 4">
+        <div class="caption">"Indulge in a moment of pure coffee bliss!"</div>
+    </div>
 </div>
+
+    </div>
+</div>
+
+<p class="caption" style="text-align: center;">We are all sweeter together, but coffee alone adds the most beautiful flavour.</p>
 
 <footer>
     <p>&copy; 2024 NGC Coffee. All rights reserved.</p>
