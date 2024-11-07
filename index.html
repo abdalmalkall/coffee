@@ -17,6 +17,11 @@
             padding: 20px;
             text-align: center;
         }
+        header h1 {
+            font-size: 2.5em;
+            color: gold;
+            text-shadow: 1px 1px 5px #000;
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -26,26 +31,59 @@
         .gallery-item {
             text-align: center;
             margin: 10px;
+            max-width: 300px;
         }
         .gallery img {
             width: 100%;
-            max-width: 300px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
         .gallery img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             border: 3px solid gold; 
+        }
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #c0c0c0;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1a1a1a;
         }
-        .caption {
-            margin-top: 10px;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 15px 0;
+            color: #ffffff;
+            background-color: #444;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #666;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 20px auto;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
         }
     </style>
 </head>
@@ -75,10 +113,11 @@
     </div>
 </div>
 
-    </div>
-</div>
-
 <p class="caption" style="text-align: center;">We are all sweeter together, but coffee alone adds the most beautiful flavour.</p>
+
+<div style="text-align: center;">
+    <a href="https://wa.me/0786511780" class="whatsapp-button">Contact Us on WhatsApp</a>
+</div>
 
 <footer>
     <p>&copy; 2024 NGC Coffee. All rights reserved.</p>
