@@ -14,50 +14,58 @@
         }
         header {
             background-color: #1a1a1a;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         header h1 {
-            font-size: 2.5em;
-            color: gold;
-            text-shadow: 1px 1px 5px #000;
+            font-size: 3em;
+            color: #b98e5f; /* Dark gold */
+            text-shadow: 2px 2px 10px #000;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #c9b57e; /* Light gold */
+            margin-top: 10px;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 30px;
         }
         .gallery-item {
             text-align: center;
-            margin: 10px;
-            max-width: 300px;
+            margin: 15px;
+            max-width: 320px;
         }
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
         .gallery img:hover {
             transform: scale(1.05);
-            border: 3px solid gold; 
+            border: 4px solid #b98e5f; /* Dark gold border */
         }
         .caption {
             margin-top: 10px;
             font-style: italic;
-            color: #c0c0c0;
+            color: #d1c5b0; /* Soft gold */
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #1a1a1a;
+            color: #c9b57e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 15px 0;
+            padding: 12px 25px;
+            margin: 20px 0;
             color: #ffffff;
             background-color: #444;
             border: none;
@@ -70,8 +78,9 @@
             background-color: #666;
         }
         .whatsapp-button {
-            display: inline-block;
-            padding: 12px 25px;
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
             margin: 20px auto;
             background-color: #25d366;
             color: white;
@@ -81,9 +90,14 @@
             text-align: center;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
         .whatsapp-button:hover {
             background-color: #1ebe57;
+        }
+        .whatsapp-button img {
+            width: 22px;
+            margin-right: 12px;
         }
     </style>
 </head>
@@ -116,7 +130,9 @@
 <p class="caption" style="text-align: center;">We are all sweeter together, but coffee alone adds the most beautiful flavour.</p>
 
 <div style="text-align: center;">
-    <a href="https://wa.me/0786511780" class="whatsapp-button">Contact Us on WhatsApp</a>
+    <a href="https://wa.me/+962786511780" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/WhatsApp.svg" alt="WhatsApp Icon"> Contact Us on WhatsApp
+    </a>
 </div>
 
 <footer>
